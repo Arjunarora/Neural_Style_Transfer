@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "project_2.py", line 2, in <module>
+    import mlflow
+ModuleNotFoundError: No module named 'mlflow'
+srun: error: gpu04: task 0: Exited with exit code 1

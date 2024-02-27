@@ -1,0 +1,22 @@
+2022-12-09 01:34:06.735957: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-12-09 01:34:06.736552: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-12-09 01:34:06.737818: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/vgg19/vgg19_weights_tf_dim_ordering_tf_kernels_notop.h5
+    8192/80134624 [..............................] - ETA: 0s 2105344/80134624 [..............................] - ETA: 1s 5218304/80134624 [>.............................] - ETA: 1s 9445376/80134624 [==>...........................] - ETA: 1s16080896/80134624 [=====>........................] - ETA: 0s16785408/80134624 [=====>........................] - ETA: 1s22454272/80134624 [=======>......................] - ETA: 1s25174016/80134624 [========>.....................] - ETA: 1s31055872/80134624 [==========>...................] - ETA: 0s36937728/80134624 [============>.................] - ETA: 0s41951232/80134624 [==============>...............] - ETA: 1s47636480/80134624 [================>.............] - ETA: 0s54140928/80134624 [===================>..........] - ETA: 0s58728448/80134624 [====================>.........] - ETA: 0s64610304/80134624 [=======================>......] - ETA: 0s67117056/80134624 [========================>.....] - ETA: 0s73048064/80134624 [==========================>...] - ETA: 0s78135296/80134624 [============================>.] - ETA: 0s80142336/80134624 [==============================] - 2s 0us/step
+2022-12-09 01:34:09.313816: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at whole_file_read_ops.cc:116 : Not found: altgebaeude.jpg; No such file or directory
+Traceback (most recent call last):
+  File "project_2.py", line 141, in <module>
+    main()
+  File "project_2.py", line 92, in main
+    content_image = load_img("altgebaeude.jpg", 512)
+  File "project_2.py", line 33, in load_img
+    img = tf.io.read_file(path_to_img)
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow/python/ops/gen_io_ops.py", line 558, in read_file
+    return read_file_eager_fallback(
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow/python/ops/gen_io_ops.py", line 596, in read_file_eager_fallback
+    _result = _execute.execute(b"ReadFile", 1, inputs=_inputs_flat,
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 59, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.NotFoundError: altgebaeude.jpg; No such file or directory [Op:ReadFile]
+srun: error: gpu06: task 0: Exited with exit code 1

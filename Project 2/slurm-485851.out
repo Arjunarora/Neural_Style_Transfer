@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "project_2.py", line 6, in <module>
+    import tensorflow_probability as tfp
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/__init__.py", line 20, in <module>
+    from tensorflow_probability import substrates
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/substrates/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.internal import all_util
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/python/__init__.py", line 138, in <module>
+    dir(globals()[pkg_name])  # Forces loading the package from its lazy loader.
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 57, in __dir__
+    module = self._load()
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 37, in _load
+    self._on_first_access()
+  File "/home/fpds02/.conda/envs/deepl_1/lib/python3.8/site-packages/tensorflow_probability/python/__init__.py", line 59, in _validate_tf_environment
+    raise ImportError(
+ImportError: This version of TensorFlow Probability requires TensorFlow version >= 2.7; Detected an installation of version 2.4.1. Please upgrade TensorFlow to proceed.
+srun: error: gpu06: task 0: Exited with exit code 1

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "project_2.py", line 6, in <module>
+    import tensorflow_probability as tfp
+ModuleNotFoundError: No module named 'tensorflow_probability'
+srun: error: gpu04: task 0: Exited with exit code 1
