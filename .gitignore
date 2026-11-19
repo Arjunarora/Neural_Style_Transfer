@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+logs/
+*.out
+/result*.jpg
+/stylised_image*.jpg
+.DS_Store
